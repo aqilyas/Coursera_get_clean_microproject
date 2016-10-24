@@ -98,6 +98,8 @@ measurments were taken 10299, aka 10299 row!
 ### The second tidy data:
 
 it contains the same number of columns, the first two ones are activity and subject, and the other 79 contain the mean from each column in the previous table, I kept the same names.
+
+Use header=TRUE when reading it with read.table!
  
 
 
