@@ -26,7 +26,7 @@ unzip("ucidata.zip")
               names(x_data) <- features[mean_std_ft,2]
               
               y_data[, 1] <- activity[y_data[, 1], 2]
-              names(data_y) <- "activity"
+              names(y_data) <- "activity"
               names(Subject) <- "subject"
               
               
@@ -40,3 +40,4 @@ unzip("ucidata.zip")
               Datatidy<-aggregate(. ~subject + activity, Final_data, mean)
               
               write.table(Datatidy, file = "Datatidy.txt",row.name=FALSE)
+              
